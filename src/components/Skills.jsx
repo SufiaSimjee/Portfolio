@@ -1,0 +1,103 @@
+import { Box, Typography, LinearProgress, Divider } from "@mui/material";
+
+const skills = [
+  { name: "IT Fundamentals", level: 70 },
+  { name: "Networking and  cybersecurity", level: 30 },
+  { name: "Web Development (HTML, CSS & JavaScript)", level: 75 },
+  { name: "Server-Side Coding Node.js & Laravel)", level: 40 },
+  { name: "Mobile Application Development (Android Framework & React Native)", level: 40 },
+  { name: "Technical Documentation", level: 65 },
+  { name: "DevOps (GitHub, Docker, & Linux", level: 45 },
+  { name: "Databases (MySQL, Firebase, & MongoDB)", level: 30 },
+  { name: "UI/UX Design (Figma & Axure)", level: 30 },
+  { name: "Application Testing and Debugging", level: 30 },
+  // { name: "UI Library (Bootstrap, Tailwind & Material UI)", level: 70 },
+  // { name: "PHP (Laravel)", level: 60 },
+  // { name: "Object-Oriented Programming (C#, C++ & Java)", level: 65 },
+  // { name: "React Framework", level: 75 },
+  // { name: "Nodejs Framework", level: 70 },
+
+];
+
+const Skills = () => (
+  <Box
+    id="skills"
+    sx={{
+      minHeight: "50vh",
+      px: { xs: 4, md: 12 },
+      py: 2,
+      backgroundColor: "#f9fafb",
+    }}
+  >
+    <Typography
+      variant="h4"
+      fontWeight="bold"
+      mb={3}
+      textAlign="center"
+      letterSpacing={1}
+      sx={{ color: "#222" }}
+    >
+      Skills
+    </Typography>
+
+    <Typography
+      variant="body1"
+      textAlign="center"
+      mb={6}
+      sx={{ maxWidth: 600, mx: "auto", color: "#444", lineHeight: 1.6 }}
+    >
+      {/* Over the years, I have built a solid foundation in web development, starting with HTML, CSS, and JavaScript, and progressing to advanced topics such as databases, frameworks, software architecture, and cybersecurity. Alongside technical skills, I have also pursued knowledge in networking, requirement analysis, and project management, recognizing their importance in delivering successful IT solutions. I remain committed to continuous learning to stay current with the rapidly evolving technology landscape. */}
+    </Typography>
+
+    <Box maxWidth={600} mx="auto">
+      {skills.map(({ name, level }, idx) => (
+        <Box key={idx} sx={{ mb: 3 }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 2,
+              mb: 1,
+            }}
+          >
+            <Typography
+              variant="body1"
+              sx={{ minWidth: 130, fontWeight: 600, color: "#333" }}
+            >
+              {name}
+            </Typography>
+
+            <Box sx={{ flexGrow: 1 }}>
+              <LinearProgress
+                variant="determinate"
+                value={level}
+                sx={{
+                  height: 14,
+                  borderRadius: 7,
+                  backgroundColor: "#e0e0e0",
+                  "& .MuiLinearProgress-bar": {
+                    borderRadius: 7,
+                    backgroundColor: "#1976d2",
+                  },
+                }}
+              />
+            </Box>
+
+            <Typography
+              variant="body2"
+              sx={{ minWidth: 35, fontWeight: 600, color: "#1976d2" }}
+            >
+              {level}%
+            </Typography>
+          </Box>
+
+          {idx !== skills.length - 1 && (
+            <Divider sx={{ bgcolor: "#ddd", mt: 1 }} />
+          )}
+        </Box>
+      ))}
+    </Box>
+  </Box>
+);
+
+export default Skills;
