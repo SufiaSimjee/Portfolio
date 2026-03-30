@@ -113,12 +113,9 @@ const Hero = () => {
           mb={4}
           lineHeight={1.6}
         >
-          Detail-oriented individual with a strong academic foundation in developing CRUD applications using modern front
-          end frameworks and MERN stack. Proficient in UI/ UX development, building responsive client-side applications, and
-          writing clear, comprehensive technical documentation. Skilled in creating user-focused applications while maintaining
-          clean and efficient codebase. Dedicated to continuously learning new technologies and adapting to project
-          requirements, with a strong focus on meeting deadlines in fast-paced work environments. Willing to assist and take on
-          any role, including testing or other tasks, as required by the project
+        I am a detail-oriented individual with a strong academic foundation in developing CRUD applications using modern front-end frameworks (React, Bootstrap, React Native, Tailwind, etc.) and the MERN stack. I am proficient in UI/UX development, building responsive client-side applications, and writing clear, comprehensive technical documentation. My focus is on learning to create user-centered applications while maintaining a clean and efficient codebase.
+
+Moreover, I am dedicated to continuously learning new technologies and adapting to project requirements, with a strong focus on meeting deadlines in fast-paced environments. I am also willing to assist and take on any role, including testing or other tasks, as required by the project.
         </Typography>
 
         <Stack
