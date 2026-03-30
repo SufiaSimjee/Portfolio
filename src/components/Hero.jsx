@@ -139,7 +139,7 @@ Moreover, I am dedicated to continuously learning new technologies and adapting 
               },
             }}
           >
-            View My Project
+            My Project
           </Button>
 
           {/* <Button
@@ -174,7 +174,27 @@ Moreover, I am dedicated to continuously learning new technologies and adapting 
               },
             }}
           >
-            Download MY CV
+            CV
+          </Button>
+           <Button
+            variant="outlined"
+            color="secondary"
+            href="/Sufia_Yusoof_Simjee_Cover_Letter.pdf"
+            download
+            startIcon={<DownloadIcon />}
+            sx={{
+              whiteSpace: "nowrap",
+              px: 4,
+              py: 1.5,
+              fontWeight: 600,
+              textTransform: "none",
+              borderRadius: 2,
+              "&:hover": {
+                boxShadow: "0 4px 12px rgb(25 118 210 / 0.3)",
+              },
+            }}
+          >
+            Cover Letter
           </Button>
         </Stack>
       </Box>
