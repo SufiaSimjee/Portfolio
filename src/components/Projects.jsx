@@ -32,7 +32,7 @@ const projectsData = [
     period: "Jan 2023 – May 2023",
   },
   {
-    title: "Social Media Campaign Website",
+    title: "Camping Product Stor",
     description:
       "Dynamic website using CSS, JavaScript, and PHP with database integration and server-side rendering.",
     tech: ["HTML", "CSS", "Javascript", "PHP", "MYSQL"],
