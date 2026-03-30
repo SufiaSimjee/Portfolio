@@ -4,7 +4,7 @@ const skills = [
   { name: "IT Fundamentals", level: 70 },
   { name: "Networking and  cybersecurity", level: 30 },
   { name: "Web Development (HTML, CSS & JavaScript)", level: 75 },
-  { name: "Server-Side Coding Node.js & Laravel)", level: 40 },
+  { name: "Server-Side Coding (Node.js & Laravel)", level: 40 },
   { name: "Mobile Application Development (Android Framework & React Native)", level: 40 },
   { name: "Technical Documentation", level: 65 },
   { name: "DevOps (GitHub, Docker, & Linux", level: 45 },
